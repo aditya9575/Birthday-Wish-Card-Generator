@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Card Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Input form for name and button to generate the card -->
+  <div class="input-container">
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button id="generateButton">Generate Your Birthday Card</button>
+  </div>
+
+  <!-- Birthday card that will be personalized -->
+  <div class="card-container" id="cardContainer" style="display: none;">
+    <div class="card" id="birthdayCard">
+      <div class="back"></div>
+      <div class="front">
+        <div class="imgset">
+          <img width="100%" src="autobdayimageuse.png">
+        </div>
+      </div>
+      <div class="text-container">
+        <p id="head">Happy Birthday <span id="userName">Friend</span>!</p>
+        <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
+        <p>Hope your day goes great!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button to download the birthday card -->
+  <button id="downloadButton" style="display: none;">Download Your Birthday Card</button>
+
+  <script src="index.js"></script>
+</body>
+</html>
